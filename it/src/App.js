@@ -24,7 +24,7 @@ function App(){
 }
 export default App*/
 
-
+/*
 import List1 from "./ListRendering/List1"
 function App(){
     return<div>
@@ -32,7 +32,17 @@ function App(){
         <List1 />
     </div>
 }
-export default App
+export default App*/
+ 
+import Regboot from "./FormHandling/Reg-boot"
+
+ function App(){
+    return<div>
+        <Regboot />
+    </div>
+
+ }
+ export default App
 
 
 

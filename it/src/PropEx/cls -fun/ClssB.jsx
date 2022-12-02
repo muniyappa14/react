@@ -9,8 +9,6 @@ class ClssB extends React.Component{
             <FuncB train={this.train} time={this.time} />
 
         </div>
-
-    }
-
+        }
 }
 export default ClssB
