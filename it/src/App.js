@@ -34,11 +34,13 @@ function App(){
 }
 export default App*/
  
-import Regboot from "./FormHandling/Reg-boot"
-
+//import Contact from "./API/ContactHome"
+//import Regboot from "./FormHandling/Reg-boot"
+//import ContactHome from "./API/ContactHome"
+import Router1 from "./Router/Router1"
  function App(){
     return<div>
-        <Regboot />
+        <Router1 />
     </div>
 
  }

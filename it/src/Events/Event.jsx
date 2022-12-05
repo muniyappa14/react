@@ -1,3 +1,4 @@
+//event binding:to bind the values
 import React from "react";
 class Event extends React.Component{
 state={
