@@ -1,62 +1,52 @@
+import Axios from 'axios'
 import React, { Component } from 'react'
-import Axios from "axios"
- class Contact extends Component {
-constructor(props){
-  super(props);
-  this.state={
-    users:[]
+import Contactlist from './Contactlist'
+import Contactdetails from './Contactdetails'
+
+ class ContactHome extends Component {
+  constructor(props){
+    super(props)
+    this.state={
+      users:[],
+      view:{}
+    }
   }
-
-
-}
-//life cycle method:component did mount
-componentDidMount(){
-  Axios.get('https://jsonplaceholder.typicode.com/users').then((response)=>{
-    this.setState({
-      users:response.data
-    })
-    //console.log(response.data)
-  }).catch((err)=>{
-    console.log(err)
-  })
-}
+  componentDidMount(){
+    Axios.get("https://jsonplaceholder.typicode.com/users")
+    .then((response)=>{
+      this.setState({users:response.data})
+    }).catch()
+  }
+  get_details=(contact)=>{
+     this.setState({view:contact})
+  }
   render() {
     return (
       <div>
-        
-        <pre>
-        {JSON.stringify(this.state.users)}
-      </pre>{
-      this.state.users.length>0 ?  <> 
-      <table className='table table-hover'> 
-        <thead>
-        <tr>
-          <th> id</th>
-          <th> name</th>
-          <th> email</th>
-        </tr>
-        </thead>
-        <tbody>
-          {
-            this.state.users.map((user)=>{
-             return (<>
-             <tr key={user.id}>
-              <td>{user.id}</td>
-              <td>{user.name}</td>
-              <td>{user.email}</td>
-             </tr>
-             </>)
-            })
-          }
-        </tbody>
-      </table>
-      </> :null
-  
-      }
+       
+        <div className="container">
+          <div className="row">
+            <div className="col-8">
+              {
+                  this.state.users.length>0 ?   <>
+                  <Contactdetails    user_details={this.state.users} view_details={this.get_details}/>
+                  </>   :null
+              }
+            </div>
+            <div className="col-4">
+              {
+                Object.keys(this.state.view).length>0?   <>
+                <Contactlist  views={this.state.view}/>
+                </>:null
+              }
+
+            </div>
+          </div>
+        </div>
         
       </div>
     )
   }
 }
 
-export default Contact
+export default ContactHome
