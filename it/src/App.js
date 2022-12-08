@@ -61,12 +61,14 @@ import{BrowserRouter as Router, Routes, Route}from "react-router-dom"
 //import Message from './React-Hooks/Updatemsg'
 //import Counter from './React-Hooks/Updatemsg'
 
-import React from 'react'
-import Hook from './React-Hooks/Useeffect-hooks/Hook'
+//import React from 'react'
+//import Hook from './React-Hooks/Useeffect-hooks/Hook'
+import React from "react"
+import Hook4 from "./React-Hooks/Useeffect-hooks/Hook4"
 const App = () => {
   return (
     <div>
-      <Hook />
+    <Hook4 />
     </div>
   )
 }
