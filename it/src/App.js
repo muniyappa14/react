@@ -63,48 +63,66 @@ import{BrowserRouter as Router, Routes, Route}from "react-router-dom"
 
 //import React from 'react'
 //import Hook from './React-Hooks/Useeffect-hooks/Hook'
-import React from "react"
-import Hook4 from "./React-Hooks/Useeffect-hooks/Hook4"
+
+//import Hook4 from "./React-Hooks/Useeffect-hooks/Hook4"
+//import React from "react"
+//import Hook5 from "./React-Hooks/Useeffect-hooks/Hook5"
+
+
+
+
+
+// import React from "react";
+// import { BrowserRouter as Routes,Route } from "react-router-dom";
+// import Home from "./project/Home";
+// import About from "./Project/About";
+// import Project from "./project/Project";
+// import Contact from "./Project/Contact";
+
+// let App=()=>{
+//     return<div>
+        
+//             <>
+//          <Routes />
+//                 <Route path="/" element={< Home/> } />
+//                 <Route path="/" element={<Project />} />
+//                 <Route path="/" element={<About /> } /> 
+//                 <Route path="/" element={<Contact />}/>
+             
+//              </>
+        
+//     </div>
+
+// }
+// export default App
+
+/*import React from 'react'
+import View from './React-Redux/View'
+import {Provider} from "react-redux"
+import {store} from "../src/React-Redux/Store"
+
 const App = () => {
   return (
     <div>
-    <Hook4 />
+        <Provider store={store}>
+      <View />
+      </Provider>
+
+    </div>
+  )
+}
+
+export default */
+import React from 'react'
+
+const App = () => {
+  return (
+    <div>
+      <one />
     </div>
   )
 }
 
 export default App
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
