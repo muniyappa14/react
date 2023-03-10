@@ -1,3 +1,4 @@
+//axios method has inbuilt promise method (.then() .catch() )
 import Axios from 'axios'
 import React, { Component } from 'react'
 import Contactlist from './Contactlist'
