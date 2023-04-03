@@ -17,7 +17,8 @@ const One = () => {
 
       //map method
       fruits.map((ele)=>{
-        result.push(<ul>{ele}</ul>)
+        result.push(<ol>{ele}</ol>)
+        return result
       })
   return (
     <div>

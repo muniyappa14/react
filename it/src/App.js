@@ -115,11 +115,11 @@ const App = () => {
 export default */
 
 import React from 'react'
-import One from "./DCT/One"
+import Links from './DCT/Links'
 const App = () => {
   return (
     <div>
-      <One />
+      <Links />
     </div>
   )
 }
