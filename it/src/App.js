@@ -113,16 +113,19 @@ const App = () => {
 }
 
 export default */
-import React from 'react'
 
+import React from 'react'
+import One from "./DCT/One"
 const App = () => {
   return (
     <div>
-      <one />
+      <One />
     </div>
   )
 }
 
 export default App
+
+
 
 

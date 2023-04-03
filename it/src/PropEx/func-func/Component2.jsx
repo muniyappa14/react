@@ -6,6 +6,7 @@ function Component2(props){
 <h2>director name:{props.name}</h2>
 <p>movie type {props.version[0]}</p>
     </div>
+    
 
 }
 export default Component2
