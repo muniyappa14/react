@@ -115,11 +115,11 @@ const App = () => {
 export default */
 
 import React from 'react'
-import Links from './DCT/Links'
+import Component2 from './PropEx/func-func/Component2'
 const App = () => {
   return (
     <div>
-      <Links />
+      <Component2 />
     </div>
   )
 }

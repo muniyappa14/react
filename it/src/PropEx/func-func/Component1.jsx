@@ -1,4 +1,5 @@
 import Component2 from "./Component2"
+import React from "react"
 function Component1(){
   let movie_name="avatar 2"
   let director_name="james cameron"
