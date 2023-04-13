@@ -115,11 +115,12 @@ const App = () => {
 export default */
 
 import React from 'react'
-import Component2 from './PropEx/func-func/Component2'
+//import Child from './DCT/passingchildtoparent/Child'
+import Parent from './DCT/passingchildtoparent/Parent'
 const App = () => {
   return (
     <div>
-      <Component2 />
+      <Parent/>
     </div>
   )
 }
